@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginController" customModule="ParentTrackingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy-family" translatesAutoresizingMaskIntoConstraints="NO" id="RNz-GL-8wN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcv-cw-mBz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1Dz-Ah-yf3">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feel safe about your children with us" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy2-cs-o6z">
+                                            <rect key="frame" x="98" y="110" width="218" height="101"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="bdw-TU-hA0">
+                                            <rect key="frame" x="20" y="236" width="374" height="190"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="parent@gmail.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1hp-iK-BlY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="Q0W-6R-xzV"/>
+                                                        <constraint firstAttribute="width" constant="374" id="ard-5c-gVr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GTK-yK-n11">
+                                                    <rect key="frame" x="0.0" y="70" width="374" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="374" id="5Di-93-2yf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="dhS-kg-tTm">
+                                                    <rect key="frame" x="114" y="140" width="146" height="50"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="len-Wd-44l" customClass="signUpLoginRoundedShadowBtn" customModule="ParentTrackingApp" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="63" height="50"/>
+                                                            <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="0.67701198630000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="eD6-do-JyL"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="17"/>
+                                                            <state key="normal" title="Signup">
+                                                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="signupBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0wV-bu-e7G"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fig-CE-YBR" customClass="signUpLoginRoundedShadowBtn" customModule="ParentTrackingApp" customModuleProvider="target">
+                                                            <rect key="frame" x="96" y="0.0" width="50" height="50"/>
+                                                            <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="0.67701198630000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="OIS-xP-5Ty"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="17"/>
+                                                            <state key="normal" title="Login">
+                                                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="loginBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vg4-82-Bhj"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="hy2-cs-o6z" secondAttribute="trailing" constant="98" id="3hM-ce-kvo"/>
+                                        <constraint firstAttribute="bottom" secondItem="bdw-TU-hA0" secondAttribute="bottom" constant="470" id="7Qx-8n-GPQ"/>
+                                        <constraint firstItem="bdw-TU-hA0" firstAttribute="top" secondItem="1Dz-Ah-yf3" secondAttribute="top" constant="236" id="8h9-Vi-MH9"/>
+                                        <constraint firstItem="bdw-TU-hA0" firstAttribute="leading" secondItem="1Dz-Ah-yf3" secondAttribute="leading" constant="20" id="Ohe-an-hgR"/>
+                                        <constraint firstAttribute="trailing" secondItem="bdw-TU-hA0" secondAttribute="trailing" constant="20" id="VKB-4c-emb"/>
+                                        <constraint firstAttribute="bottom" secondItem="hy2-cs-o6z" secondAttribute="bottom" constant="685" id="dDp-w3-Hcc"/>
+                                        <constraint firstItem="hy2-cs-o6z" firstAttribute="leading" secondItem="1Dz-Ah-yf3" secondAttribute="leading" constant="98" id="jeJ-PH-SlE"/>
+                                        <constraint firstItem="hy2-cs-o6z" firstAttribute="top" secondItem="1Dz-Ah-yf3" secondAttribute="top" constant="110" id="lXY-AN-GgK"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RNz-GL-8wN" secondAttribute="trailing" id="0mr-A7-8rL"/>
+                            <constraint firstItem="RNz-GL-8wN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Ca-cm-urm"/>
+                            <constraint firstItem="vcv-cw-mBz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="42A-64-fr0"/>
+                            <constraint firstItem="RNz-GL-8wN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P2Y-Qn-hml"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vcv-cw-mBz" secondAttribute="trailing" id="TT3-by-dQ8"/>
+                            <constraint firstItem="vcv-cw-mBz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fJW-mR-b3F"/>
+                            <constraint firstAttribute="bottom" secondItem="vcv-cw-mBz" secondAttribute="bottom" id="fsM-ji-vGa"/>
+                            <constraint firstAttribute="bottom" secondItem="RNz-GL-8wN" secondAttribute="bottom" id="oyX-8x-bWa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTxtF" destination="1hp-iK-BlY" id="iyI-RD-w0X"/>
+                        <outlet property="loginBtn" destination="fig-CE-YBR" id="LtF-7u-tbG"/>
+                        <outlet property="passwordTTxtF" destination="GTK-yK-n11" id="UUW-4h-h97"/>
+                        <outlet property="signupBtn" destination="len-Wd-44l" id="1Ug-rg-hiw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="114.50892857142857"/>
+        </scene>
+        <!--Map Controller-->
+        <scene sceneID="7rC-3n-B5n">
+            <objects>
+                <viewController storyboardIdentifier="map" id="pyx-hb-Rcp" customClass="MapController" customModule="ParentTrackingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="86a-It-dsq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rcA-tW-jBh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <outlet property="delegate" destination="pyx-hb-Rcp" id="auN-pQ-Fkl"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rS-yr-8FY">
+                                <rect key="frame" x="20" y="49" width="38" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="AJ8-dq-OYE"/>
+                                    <constraint firstAttribute="height" constant="33.5" id="Gfu-Eg-gxQ"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="arrowtriangle.left.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="pyx-hb-Rcp" eventType="touchUpInside" id="Rvg-0d-UqR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rcA-tW-jBh" firstAttribute="leading" secondItem="NBE-Fy-h8H" secondAttribute="leading" id="Loi-le-TY3"/>
+                            <constraint firstItem="9rS-yr-8FY" firstAttribute="leading" secondItem="NBE-Fy-h8H" secondAttribute="leading" constant="20" id="S0o-D4-2ls"/>
+                            <constraint firstAttribute="bottom" secondItem="rcA-tW-jBh" secondAttribute="bottom" id="bq3-r6-QHw"/>
+                            <constraint firstItem="9rS-yr-8FY" firstAttribute="top" secondItem="NBE-Fy-h8H" secondAttribute="top" constant="1" id="c6F-5a-nea"/>
+                            <constraint firstItem="rcA-tW-jBh" firstAttribute="top" secondItem="86a-It-dsq" secondAttribute="top" id="lop-sS-HTT"/>
+                            <constraint firstItem="NBE-Fy-h8H" firstAttribute="trailing" secondItem="rcA-tW-jBh" secondAttribute="trailing" id="rc9-YW-GUk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NBE-Fy-h8H"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="rcA-tW-jBh" id="DbP-Ce-JsB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Www-zX-BJj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="827.536231884058" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowtriangle.left.fill" catalog="system" width="128" height="113"/>
+        <image name="happy-family" width="848" height="565"/>
+    </resources>
+</document>
